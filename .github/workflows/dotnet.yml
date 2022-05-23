@@ -36,3 +36,11 @@ jobs:
       with:
         name: artifact
         path: ${{ env.AZURE_WEBAPP }}/output/
+        
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.0
+      with:
+        name: iac
+        path: infraestrutura/
+        
+    
